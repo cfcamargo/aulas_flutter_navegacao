@@ -26,7 +26,14 @@ class _TelaSecundariaState extends State<TelaSecundaria> {
         padding: EdgeInsets.all(32),
         child: Column(
           children: [
-            Text("Ola usuario: ${widget.valor}")
+            Text("Ola usuario: ${widget.valor}"),
+            RaisedButton(
+              child: Text("Ir para tela Inicial"),
+              padding: EdgeInsets.all(15),
+              onPressed: (){
+                Navigator.pushNamed(context, "/");
+              },
+            )
           ],
         ),
       ),
